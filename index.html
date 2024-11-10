@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit's Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/ProfilePhoto.jpg"
+              alt="Rohit Khairmode"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Rohit Khairmode">Rohit Khairmode</h1>
+
+            <p class="title">Web developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:rohitkhairmode2024@gmail.com"
+                  class="contact-link"
+                  >rohitkhairmode2024@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <!-- <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+12133522795" class="contact-link"
+                  >+1 (213) 352-2795</a
+                >
+              </div>
+            </li> -->
+
+            <!-- <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">June 23, 1982</time>
+              </div>
+            </li> -->
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <a
+                  href="https://maps.app.goo.gl/5BhWkmA5orkFASQy8"
+                  target="_blank"
+                  ><address>Sangli, Maharastra, India</address></a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/rohit-khairmode/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/Rohit-Khairmode"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <!-- <li class="social-item leetcode">
+              <a href="#" class="social-link">
+                <img src="./assets/images/leetcode.png" />
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <!-- 
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li> -->
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li> -->
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Hello! I’m Rohit Khairmode, a Full Stack Developer passionate
+              about building dynamic, scalable web applications. With expertise
+              in JavaScript, React, Next.js, and database management using
+              Prisma and MongoDB, I focus on developing solutions that enhance
+              user experience and streamline functionality.
+            </p>
+            <p>
+              I’ve tackled complex projects like Elevare, an AI-powered email
+              management platform, and The Wild Oasis, a comprehensive hotel
+              booking system with both client-facing and internal management
+              applications. I've also strengthened my problem-solving abilities
+              by completing over 250
+              <span class="leetcode-span">
+                <a
+                  href="https://leetcode.com/u/rohitkhairmode/"
+                  target="_blank"
+                  class="leetcode"
+                  >Leetcode<img src="./assets/images/leetcode.png" /></a
+              ></span>
+              &nbsp; challenges continuously refining my approach to real-world
+              coding challenges.
+            </p>
+
+            <!-- <p>
+              I solved 150+ DSA problems✅ on
+
+              <span class="leetcode-span">
+                <a
+                  href="https://leetcode.com/u/rohitkhairmode/"
+                  target="_blank"
+                  class="leetcode"
+                  >Leetcode<img src="./assets/images/leetcode.png" /></a></span
+              >, &nbsp; which enhanced my problem-solving skills to address
+              challenges in both front-end and back-end development
+            </p> -->
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Development</h5>
+                  <data value="80">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">DataBase Management</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">DSA</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  D Y Patil College of Engineering Salhokenagar, Kolhapur
+                </h4>
+
+                <span>2021 — 2024</span>
+
+                <p class="timeline-text">
+                  B.Tech- Computer Science and Engineering
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Latthe Education Society of Polytechnic Sangli
+                </h4>
+
+                <span>2019 — 2021</span>
+
+                <p class="timeline-text">Diploma - Computer engineering</p>
+              </li>
+
+              <!-- <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  High school of art and design
+                </h4>
+
+                <span>2002 — 2004</span>
+
+                <p class="timeline-text">
+                  Duis aute irure dolor in reprehenderit in voluptate, quila
+                  voluptas mag odit aut fugit, sed consequuntur magni dolores
+                  eos.
+                </p>
+              </li> -->
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Developer Intern</h4>
+
+                <span>May/2023 -July/2023</span>
+
+                <p class="timeline-text">
+                  In this internship, I worked on the project ’Inventrom
+                  website’ and designed the user interface of the Inventrom
+                  website under the guidance of Mr. Ashwin Salgaocar (DevOps
+                  Engineer) by applying my knowledge of HTML, CSS, and
+                  Javascript.
+                </p>
+              </li>
+
+              <!-- <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Art director</h4>
+
+                <span>2013 — 2015</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li> -->
+
+              <!-- <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web designer</h4>
+
+                <span>2010 — 2013</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li> -->
+            </ol>
+          </section>
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Certifications</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a
+                  href="https://drive.google.com/file/d/1dWGL52nniGhksxwhAbKNGwlv2IL52cAY/view?usp=sharing"
+                  ht
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/Html5 and Css3-min.jpg"
+                    alt="Html & CSS logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a
+                  href="https://drive.google.com/file/d/1i-Iy8Mp4-vVeVck2AenoW4tGRxBKQOll/view"
+                  target="_blank"
+                >
+                  <img src="./assets/images/js-min.png" alt="Js logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a
+                  href="https://www.udemy.com/certificate/UC-bec50805-3d51-4231-a3fc-e11dc7ff1f34/"
+                  target="_blank"
+                >
+                  <img src="./assets/images/Java.webp" alt="Java logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a
+                  href="https://drive.google.com/file/d/1S__Xf9ikEvOjb-uAtUlSdCLgV-4e6v2c/view?usp=sharing"
+                  target="_blank"
+                >
+                  <img src="./assets/images/webdev.jpg" alt="internship logo" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Html & CSS</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Javascript</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>React Js</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Next Js</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Html & CSS</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Javascript</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>React JS</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Next JS</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="next js"
+              >
+                <a href="https://elevareapp.com" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/elevareapp-min.png"
+                      alt="The Elevare App"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Elevare</h3>
+
+                  <p class="project-category">Next Js</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="next js"
+              >
+                <a
+                  href="https://the-wild-oasis-website-by-rohit.vercel.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Wild-Oasis-Website-min.png"
+                      alt="The Wild Oasis Website"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">The Wild Oasis Website</h3>
+
+                  <p class="project-category">Next Js</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react js"
+              >
+                <a
+                  href="https://demo-wild-oasis-by-rohit.netlify.app"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Wild-Oasis-App-min.png"
+                      alt="Hotel Management app"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Hotel Management app</h3>
+
+                  <p class="project-category">React</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="javascript"
+              >
+                <a
+                  href="https://recipe-book-rohit.netlify.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Recipe Book-min.png"
+                      alt="Recipe Book"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Recipe Book</h3>
+
+                  <p class="project-category">Javascript</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react js"
+              >
+                <a
+                  href="https://movies-list-by-rohit.netlify.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Movies-Point-min.png"
+                      alt="Movies Point"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Movies Point</h3>
+
+                  <p class="project-category">React</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react js"
+              >
+                <a
+                  href="https://fast-react-pizza-by-rohit.netlify.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Fast-React-Pizza-min.png"
+                      alt="Restaurants menu app"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Restaurants menu app</h3>
+
+                  <p class="project-category">React</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="javascript"
+              >
+                <a
+                  href="https://rohit-khairmode.github.io/Workout-Tracker/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Workout-Tracker-min.png"
+                      alt="Workout-Tracker"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Workout-Tracker</h3>
+
+                  <p class="project-category">javascript</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react js"
+              >
+                <a
+                  href="https://react-quiz-by-rohit.netlify.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-quiz-min.png"
+                      alt="React Quiz"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">React Quiz</h3>
+
+                  <p class="project-category">react</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react js"
+              >
+                <a
+                  href="https://travel-list-by-rohit.netlify.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Travel-list-min.png"
+                      alt="Travel Check list"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Travel Check list</h3>
+
+                  <p class="project-category">React</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="javascript"
+              >
+                <a
+                  href="https://rohit-khairmode.github.io/Dice-Game/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Dice game-min.png"
+                      alt="Dice Game"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Dice Game</h3>
+
+                  <p class="project-category">javascript</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="javascript"
+              >
+                <a
+                  href="https://rohit-khairmode.github.io/Guess-My-Number/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/GuessMyNumber-min.png"
+                      alt="Guess-My-Number"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Guess My Number</h3>
+
+                  <p class="project-category">javascript</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="html & css"
+              >
+                <a
+                  href="https://rohit-khairmode.github.io/Omnifood-Landing-Page/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Omnifood-min.png"
+                      alt="Omnifood Landing Page"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Omnifood Landing Page</h3>
+
+                  <p class="project-category">Html & CSS</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="html & css"
+              >
+                <a
+                  href="https://rohit-khairmode.github.io/Smart-Bus-Tracking-System/html/index.html"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/SBTS-min.png"
+                      alt="Smart Bus tracking system Landing page"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Smart Bus tracking system Landing page
+                  </h3>
+
+                  <p class="project-category">Html & CSS</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
